@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>더베어앤컴퍼니 · 격이 다른 파트너</title>
+<meta name="theme-color" content="#1a1a1a" />
+<meta name="description" content="The Bear & Company — AI 광고제작, 기업컨설팅, AX 전환까지. 기업이 도약하는 모든 순간을 함께합니다." />
+
+<link rel="stylesheet" href="colors_and_type.css" />
+<link rel="stylesheet" href="styles.css" />
+
+<style>
+  /* set initial body bg before JS runs */
+  html, body { background: oklch(0.13 0.005 60); }
+</style>
+</head>
+<body class="dark-premium">
+
+<div class="app-shell">
+
+  <!-- ====================== Header ====================== -->
+  <header class="app-header">
+    <div class="app-header-inner">
+      <a href="#top" class="brand">
+        <span class="brand-name brand-wordmark">TB<span class="brand-accent">N</span>C</span>
+      </a>
+      <button class="menu-btn" id="menu-open" aria-label="메뉴 열기" aria-controls="drawer" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ====================== Drawer ====================== -->
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+  <aside class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <span class="brand">
+        <span class="brand-name brand-wordmark">TB<span class="brand-accent">N</span>C</span>
+      </span>
+      <button class="menu-btn" id="menu-close" aria-label="닫기">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#services" data-drawer-close>
+        서비스
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+      <a href="#why" data-drawer-close>
+        왜 더베어인가
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+      <a href="#process" data-drawer-close>
+        진행 과정
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+      <a href="#contact" data-drawer-close>
+        문의하기
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+      </a>
+    </nav>
+    <div class="drawer-foot">
+      <a href="#contact" class="btn btn-primary btn-block" data-drawer-close>
+        무료 상담 신청하기
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+      <a href="http://pf.kakao.com/_VxhxbxbX/chat" target="_blank" rel="noreferrer" class="btn btn-kakao btn-block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        카톡 상담
+      </a>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- ====================== Hero ====================== -->
+    <section class="hero" id="top">
+      <div class="hero-bg"></div>
+      <div style="position: relative; z-index: 1;">
+        <span class="pill">
+          <span class="pill-dot"></span>
+          THE BEAR &amp; COMPANY
+        </span>
+        <h1>
+          기업의 성장에는<br/>
+          <span class="headline-accent">격이 다른</span> 파트너가<br/>
+          필요합니다.
+        </h1>
+        <p style="margin-top:22px; font-size:0.9375rem; line-height:1.65; color:var(--muted-foreground); max-width:380px;">
+          AI 광고제작부터 기업컨설팅, AX 전환까지.<br/>
+          기업이 도약하는 모든 순간을 함께합니다.<br/>
+          <span style="display:inline-block; margin-top:10px; font-family:var(--font-heading); font-size:0.8125rem; letter-spacing:0.02em; color:var(--foreground); font-weight:500;">
+            The Bear <span class="headline-accent">&amp;</span> Company
+          </span>
+        </p>
+        <div style="margin-top:32px; display:flex; flex-direction:column; gap:10px;">
+          <a href="#contact" class="btn btn-primary btn-block">
+            무료 상담 신청하기
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="#services" class="btn btn-outline btn-block">서비스 알아보기</a>
+        </div>
+
+        <!-- Proof strip -->
+        <div style="margin-top:44px; padding-top:24px; border-top:1px solid var(--border); display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px;">
+          <div>
+            <div style="font-family:var(--font-heading); font-weight:700; font-size:1.05rem; color:var(--foreground); letter-spacing:-0.02em; margin-bottom:4px;">700만+</div>
+            <div style="font-size:0.7rem; color:var(--muted-foreground); line-height:1.4;">한국인 페르소나 운용</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-heading); font-weight:700; font-size:1.05rem; color:var(--foreground); letter-spacing:-0.02em; margin-bottom:4px;">90+</div>
+            <div style="font-size:0.7rem; color:var(--muted-foreground); line-height:1.4;">기업 컨설팅 수행</div>
+          </div>
+          <div>
+            <div style="font-family:var(--font-heading); font-weight:700; font-size:1.05rem; color:var(--foreground); letter-spacing:-0.02em; margin-bottom:4px;">3영역</div>
+            <div style="font-size:0.7rem; color:var(--muted-foreground); line-height:1.4;">AI · 컨설팅 · AX 풀스택</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Services ====================== -->
+    <section class="section" id="services" style="background: var(--surface);">
+      <div class="section-head">
+        <span class="eyebrow">SERVICES</span>
+        <h2>
+          브랜딩, 광고 제작부터<br/>
+          기업컨설팅, <span class="headline-accent">AI 도입</span>까지
+        </h2>
+        <div class="lead" style="display:flex; flex-direction:column; gap:14px;">
+          <p style="margin:0;">아직도, 비싼 비용으로 광고제작을 하고 계시나요?</p>
+          <p style="margin:0; color:var(--foreground); font-weight:600;">저희는 예술 하지 않습니다.</p>
+          <p style="margin:0;">
+            오직 검증된 결과를 벤치마킹 하였고,<br/>
+            최고의 퀄리티로 성과를 검증하고 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:12px;" id="services-list">
+
+        <!-- Service 01 (open by default) -->
+        <article class="service-card" data-open="true">
+          <div class="service-card-header" role="button" aria-expanded="true" tabindex="0">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <span class="service-card-num">/ 01</span>
+              <span class="service-toggle" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+              </span>
+            </div>
+            <div>
+              <h3 style="margin-bottom:6px;">AI 광고제작</h3>
+              <div style="font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.08em; color:var(--muted-foreground); text-transform:uppercase;">AI Advertising</div>
+            </div>
+            <p style="margin:0; font-size:0.875rem; line-height:1.6; color:var(--muted-foreground);">
+              최신 AI 툴을 활용해 빠르고 일관되게 시각 자산을 만듭니다.
+            </p>
+          </div>
+          <div class="service-card-body">
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>영상 제작</div>
+              <div class="service-item-desc">AI 기반 쇼츠 · 필름 · 모션 그래픽스</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>이미지 제작</div>
+              <div class="service-item-desc">키비주얼 · 제품컷 · SNS 소재</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>브랜딩</div>
+              <div class="service-item-desc">로고 · BI · 가이드라인</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>홈페이지 제작</div>
+              <div class="service-item-desc">랜딩 · 코퍼레이트 웹사이트 구축</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 02 -->
+        <article class="service-card" data-open="false">
+          <div class="service-card-header" role="button" aria-expanded="false" tabindex="0">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <span class="service-card-num">/ 02</span>
+              <span class="service-toggle" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+              </span>
+            </div>
+            <div>
+              <h3 style="margin-bottom:6px;">기업컨설팅</h3>
+              <div style="font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.08em; color:var(--muted-foreground); text-transform:uppercase;">Corporate Consulting</div>
+            </div>
+            <p style="margin:0; font-size:0.875rem; line-height:1.6; color:var(--muted-foreground);">
+              인증·자금·전략·검증을 원스톱으로.<br/>
+              대한민국에서 사업하기 위한 스텝을 잡아드립니다.
+            </p>
+          </div>
+          <div class="service-card-body">
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>기업 인증</div>
+              <div class="service-item-desc">벤처 · 이노비즈 · 메인비즈</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>정책자금 전략</div>
+              <div class="service-item-desc">자금 로드맵 및 신청 전략 수립</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>브랜드 기획</div>
+              <div class="service-item-desc">아이덴티티 · 포지셔닝 · 메시지</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>사업개발 컨설팅</div>
+              <div class="service-item-desc">BM 설계 · 경영시스템 구조화</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>마케팅 가설검증</div>
+              <div class="service-item-desc">700만 한국인 페르소나 활용</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 03 -->
+        <article class="service-card" data-open="false">
+          <div class="service-card-header" role="button" aria-expanded="false" tabindex="0">
+            <div style="display:flex; align-items:center; justify-content:space-between;">
+              <span class="service-card-num">/ 03</span>
+              <span class="service-toggle" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+              </span>
+            </div>
+            <div>
+              <h3 style="margin-bottom:6px;">AX 컨설팅</h3>
+              <div style="font-family:var(--font-mono); font-size:0.7rem; letter-spacing:0.08em; color:var(--muted-foreground); text-transform:uppercase;">AI Transformation</div>
+            </div>
+            <p style="margin:0; font-size:0.875rem; line-height:1.6; color:var(--muted-foreground);">
+              AI를 접목하는 것에서 조직에 내재화하는 것까지.<br/>
+              1인 기업도 100명 기업처럼, AI 전환을 설계합니다.
+            </p>
+          </div>
+          <div class="service-card-body">
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>AI 도입 컨설팅</div>
+              <div class="service-item-desc">진단 · 로드맵 · 파일럿 설계</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>챗봇 · 직무 Agent</div>
+              <div class="service-item-desc">제작 · 배포 · 유지보수 일괄 수행</div>
+            </div>
+            <div class="service-item">
+              <div class="service-item-label"><span class="service-item-dot"></span>제작 Tool 최적화</div>
+              <div class="service-item-desc">영상 · 광고 제작 Tool 워크플로우 특화</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ====================== Why Us ====================== -->
+    <section class="section" id="why">
+      <div class="section-head">
+        <span class="eyebrow">WHY THE BEAR</span>
+        <h2>
+          왜 <span class="headline-accent">더베어</span>인가.
+        </h2>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:32px;">
+        <div class="stat-card">
+          <div class="stat-value">700<span class="unit">만+</span></div>
+          <div class="stat-label">한국인 페르소나 보유</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">90<span class="unit">+</span></div>
+          <div class="stat-label">기업 컨설팅 수행 실적</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">98<span class="unit">%</span></div>
+          <div class="stat-label">인증 취득 성공률</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">24<span class="unit">h</span></div>
+          <div class="stat-label">상담 신청 회신 속도</div>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:0;">
+        <div style="padding:22px 0; border-top:1px solid var(--border); display:flex; gap:14px; align-items:flex-start;">
+          <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--primary); font-weight:500; flex-shrink:0; margin-top:5px;">01</span>
+          <div>
+            <div style="font-weight:600; font-size:1rem; margin-bottom:6px; letter-spacing:-0.01em;">광고 → 컨설팅 → AX 풀스택</div>
+            <div style="font-size:0.875rem; color:var(--muted-foreground); line-height:1.6;">세 영역을 관통하는 입체적인 파트너십을 제공합니다.</div>
+          </div>
+        </div>
+        <div style="padding:22px 0; border-top:1px solid var(--border); display:flex; gap:14px; align-items:flex-start;">
+          <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--primary); font-weight:500; flex-shrink:0; margin-top:5px;">02</span>
+          <div>
+            <div style="font-weight:600; font-size:1rem; margin-bottom:6px; letter-spacing:-0.01em;">획기적인 비용 절감</div>
+            <div style="font-size:0.875rem; color:var(--muted-foreground); line-height:1.6;">700만 페르소나로 비용을 획기적으로 아낄 수 있습니다.</div>
+          </div>
+        </div>
+        <div style="padding:22px 0; border-top:1px solid var(--border); display:flex; gap:14px; align-items:flex-start;">
+          <span style="font-family:var(--font-mono); font-size:0.7rem; color:var(--primary); font-weight:500; flex-shrink:0; margin-top:5px;">03</span>
+          <div>
+            <div style="font-weight:600; font-size:1rem; margin-bottom:6px; letter-spacing:-0.01em;">조직에 남는 AI 역량</div>
+            <div style="font-size:0.875rem; color:var(--muted-foreground); line-height:1.6;">외주는 물론, 내부에서 쓸 수 있는 도구·프로세스를 남깁니다.</div>
+          </div>
+        </div>
+        <div style="border-top:1px solid var(--border);"></div>
+      </div>
+    </section>
+
+    <!-- ====================== Process ====================== -->
+    <section class="section" id="process" style="background: var(--surface);">
+      <div class="section-head">
+        <span class="eyebrow">HOW WE WORK</span>
+        <h2>
+          체계적 프로세스로<br/>
+          <span class="headline-accent">속도감 있게. 퀄리티 있게.</span>
+        </h2>
+      </div>
+      <div>
+        <div class="process-step">
+          <div class="process-step-num">01</div>
+          <div class="process-step-line"></div>
+          <div class="process-step-body">
+            <div class="process-step-title">상담 신청</div>
+            <div class="process-step-desc">
+              30분 무료 상담. 현재 상황과 목표를 듣습니다.<br/>
+              <span style="color:var(--muted-foreground); opacity:0.85;">(1:1 대면상담 또는 Zoom 미팅)</span>
+            </div>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">02</div>
+          <div class="process-step-line"></div>
+          <div class="process-step-body">
+            <div class="process-step-title">진단 · 제안</div>
+            <div class="process-step-desc">현상황을 다각적으로 분석해 맞춤 로드맵을 제시합니다.</div>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="process-step-num">03</div>
+          <div class="process-step-line"></div>
+          <div class="process-step-body">
+            <div class="process-step-title">실행</div>
+            <div class="process-step-desc">함께 일하는 팀으로 압도적 아웃풋을 만들어 드립니다.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== Contact ====================== -->
+    <section class="section" id="contact">
+      <div class="section-head">
+        <span class="eyebrow">GET IN TOUCH</span>
+        <h2>
+          대표님의 기업에는<br/>
+          <span class="headline-accent">격이 다른</span> 파트너가 필요합니다.
+        </h2>
+        <p class="lead">
+          30분 무료 상담입니다. 근무일 기준 24시간 내 회신드립니다.
+        </p>
+      </div>
+
+      <form id="contact-form" style="display:flex; flex-direction:column; gap:18px;" novalidate>
+        <div class="field">
+          <label class="field-label">문의 유형<span class="req">*</span></label>
+          <div class="chip-row" role="radiogroup" aria-label="문의 유형">
+            <button type="button" class="chip active" data-type="AI 광고제작" role="radio" aria-checked="true">AI 광고제작</button>
+            <button type="button" class="chip" data-type="기업컨설팅" role="radio" aria-checked="false">기업컨설팅</button>
+            <button type="button" class="chip" data-type="AX 컨설팅" role="radio" aria-checked="false">AX 컨설팅</button>
+          </div>
+          <input type="hidden" name="type" value="AI 광고제작" />
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="f-company">회사명<span class="req">*</span></label>
+          <input id="f-company" name="company" class="input" placeholder="(주) 회사명" required />
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="f-name">담당자<span class="req">*</span></label>
+          <input id="f-name" name="name" class="input" placeholder="홍길동" required />
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="f-phone">연락처<span class="req">*</span></label>
+          <input id="f-phone" name="phone" class="input" type="tel" placeholder="010-0000-0000" required />
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="f-email">이메일<span class="req">*</span></label>
+          <input id="f-email" name="email" class="input" type="email" placeholder="name@company.com" required />
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="f-message">문의 내용</label>
+          <textarea id="f-message" name="message" class="textarea" placeholder="현재 상황과 찾고자 하는 도움을 자유롭게 적어주세요."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+          <span class="submit-default">
+            상담 신청하기
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </span>
+          <span class="submit-done" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+            접수되었습니다
+          </span>
+        </button>
+
+        <p style="margin:0; font-size:0.75rem; color:var(--muted-foreground); line-height:1.5; text-align:center;">
+          제출 시 개인정보 처리방침에 동의한 것으로 간주됩니다.<br/>
+          개인정보는 상담 목적으로만 활용됩니다.
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ====================== Footer ====================== -->
+  <footer class="app-footer">
+    <div class="app-footer-brand">
+      <span class="brand-wordmark">TB<span class="brand-accent">N</span>C</span>
+      <span style="font-weight:500; font-size:0.875rem; color:var(--muted-foreground);">
+        The Bear <span class="brand-accent">&amp;</span> Company
+      </span>
+    </div>
+    <div class="app-footer-info">
+      <div>더베어앤컴퍼니 · 대표 정지웅</div>
+      <div>서울특별시 강남구 신사동 566-14, 5F</div>
+      <div>사업자등록번호 619-09-22761</div>
+      <div>bear.apgujeong@gmail.com</div>
+      <div style="margin-top:8px; color:var(--foreground); font-weight:500;">기업이 도약하는 모든 순간을 함께합니다.</div>
+    </div>
+    <div class="app-footer-bottom">
+      <span>© 2026 The Bear &amp; Company.</span>
+      <span style="display:flex; gap:14px;">
+        <a href="privacy.html" style="color:inherit;">개인정보</a>
+        <a href="terms.html" style="color:inherit;">이용약관</a>
+        <a href="index.html" style="color:inherit;">데스크탑</a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- ====================== Floating CTA ====================== -->
+  <div class="floating-cta" id="floating-cta">
+    <div class="floating-cta-inner">
+      <a href="#contact" class="btn btn-primary floating-cta-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+        상담 신청
+      </a>
+      <a href="http://pf.kakao.com/_VxhxbxbX/chat" target="_blank" rel="noreferrer" class="btn btn-kakao floating-cta-btn floating-cta-kakao">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        카톡 상담
+      </a>
+    </div>
+  </div>
+
+</div><!-- /.app-shell -->
+
+<script src="config.js" defer></script>
+<script src="mobile.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Wrangler local cache (Cloudflare Pages deploy state)
+.wrangler/
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
